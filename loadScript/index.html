@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer type="module" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/main.js"></script>
+
+
+</head>
+
+<body>
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+
+    <h2>Таймер</h2>
+    <div class="timer" style="float: left; margin-right: 10px;"></div>
+    <input type="text" name="time" class="time" placeholder="в секундах...">
+    <button class="start">Старт</button>
+    <button class="pause">Стоп</button>
+    <script src="js/timer.js"></script>
+</body>
+
+</html>
